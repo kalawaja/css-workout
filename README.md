@@ -10,7 +10,7 @@ So I used normalize.css to get the same output in all browsers.
 
 ![using-flexbox](images/using-flexbox.png)
 
- ```html
+```html
 #index.html
 
 <!DOCTYPE html>
@@ -46,6 +46,52 @@ So I used normalize.css to get the same output in all browsers.
     align-items: center;
 }
 ```
+
+> ### Using grid
+
+![using-grid](images/using-grid.png)
+
+```html
+#index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Using grid</title>
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+   <div class="parent">
+       <div class="child"></div>
+       <div class="child"></div>
+   </div>
+</body>
+</html>
+```
+
+```css
+#styles.css
+
+/*Using grid*/
+
+.parent {
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+}
+
+.child {
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    display: grid;
+    place-content: center;
+}
+``
 
 
 
