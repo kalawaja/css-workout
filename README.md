@@ -92,3 +92,53 @@ So I used normalize.css to get the same output in all browsers.
     place-content: center;
 }
 ```
+
+> ### Using grid
+
+![using-position](images/using-position.png)
+
+```html
+#index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Using flexbox</title>
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+   <div class="parent">
+       <div class="child"></div>
+       <div class="child"></div>
+   </div>
+</body>
+</html>
+```
+
+```css
+#styles.css
+
+/*Using position*/
+
+.parent {
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    position: relative;
+}
+
+.child {
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+```
+
