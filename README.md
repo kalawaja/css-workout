@@ -25,8 +25,8 @@ So I used normalize.css to get the same output in all browsers.
 </head>
 <body>
     <div class="parent">
-        <div class="child"></div>
-        <div class="child"></div>
+        <div class="parent"></div>
+        <div class="parent"></div>
     </div>
 </body>
 </html>
@@ -41,19 +41,9 @@ So I used normalize.css to get the same output in all browsers.
     width: 200px;
     height: 200px;
     border: 1px solid;
-    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.child {
-    width: 50px;
-    height: 50px;
-    border: 1px solid;
-    margin: 2px;
-    display: grid;
-    place-content: center;
 }
 ```
 
