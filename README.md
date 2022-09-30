@@ -1,4 +1,61 @@
 # css-workout
  By training on the css features, I make it possible to use it all the time.
 
- 
+> ### Normalize.css
+A modern, HTML5-ready alternative to CSS resets <br>
+Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing. If you want to take a look, you can check: [Normalize.css](https://necolas.github.io/normalize.css/) <br>
+So I used normalize.css to get the same output in all browsers.
+
+> ### Using flexbox
+
+![using-flexbox](images/using-flexbox.png)
+
+ ```html
+#index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using flexbox</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</body>
+</html>
+```
+
+```css
+#styles.css
+
+/*Using flexbox*/
+
+.parent {
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child {
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    margin: 2px;
+    display: grid;
+    place-content: center;
+}
+```
+
+
+
