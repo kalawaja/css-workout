@@ -91,7 +91,4 @@ So I used normalize.css to get the same output in all browsers.
     display: grid;
     place-content: center;
 }
-``
-
-
-
+```
