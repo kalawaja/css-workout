@@ -1,0 +1,9 @@
+
+/*Descendant Selector*/
+
+.container h3 {
+    border: 1px solid black;
+    max-width: 50px;
+    text-align: center;
+    background-color: bisque;
+}
