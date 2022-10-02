@@ -282,3 +282,47 @@ So I used normalize.css to get the same output in all browsers.
 }
 ```
 
+> ### 2. Adjacent Sibling Selector
+
+![adjacent-sibling-selector](images/adjacent-sibling-selector.png)
+
+```html
+#index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Descendant Selector</title>
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+   <div class="container">
+        <h3>Lorem</h3>
+        <h3>Ipsum</h3>
+    </div>
+    <h3>Dolor</h3>
+    <h3>Sit</h3>
+    <h3>Amet</h3>
+    <h3>Consectetur</h3>
+</body>
+</html>
+```
+
+```css
+#styles.css
+
+/*Adjacent Sibling Selector*/
+
+div + h3 {
+    border: 1px solid black;
+    max-width: 50px;
+    text-align: center;
+    background-color: thistle;
+}
+```
+
+

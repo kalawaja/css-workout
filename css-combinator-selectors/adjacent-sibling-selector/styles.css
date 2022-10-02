@@ -1,0 +1,9 @@
+
+/*Adjacent Sibling Selector*/
+
+div + h3 {
+    border: 1px solid black;
+    max-width: 50px;
+    text-align: center;
+    background-color: thistle;
+}
