@@ -325,4 +325,45 @@ div + h3 {
 }
 ```
 
+> ### 3. Child Selector
 
+![child-selector](images/child-selector.png)
+
+```html
+#index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Child Selector</title>
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+   <div class="container">
+        <p>Lorem</p>
+        <p>Ipsum</p>
+    </div>
+    <p>Dolor</p>
+    <p>Sit</p>
+    <p>Amet</p>
+    <p>Consectetur</p>
+</body>
+</html>
+```
+
+```css
+#styles.css
+
+/*Child Selector*/
+
+div > p {
+    border: 1px solid black;
+    max-width: 60px;
+    text-align: center;
+    background-color: powderblue;
+}
+```
