@@ -1,0 +1,9 @@
+
+/*Chained Class Selector*/
+
+.container1.select2 {
+    border: 1px solid black;
+    max-width: 100px;
+    text-align: center;
+    background-color: royalblue;
+}

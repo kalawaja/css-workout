@@ -410,3 +410,52 @@ div ~ p {
     background-color: lightgreen;
 }
 ```
+
+> ### 5. Chained Class Selector
+
+![chained-class-selector](images/chained-class-selector.png)
+
+```html
+#index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Chained Class Selector</title>
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+   <div class="container1 select2">
+        <p>Lorem</p>
+        <p>Ipsum</p>
+    </div>
+    <div class="container1 select3">
+        <p>Dolor</p>
+        <p>Sit</p>
+        <p>Amet</p>
+        <p>Consectetur</p>
+    </div>
+    <div class="container1 select2">
+        <p>Adipisicing</p>
+        <p>Elit.</p>
+    </div>
+</body>
+</html>
+```
+
+```css
+#styles.css
+
+/*Chained Class Selector*/
+
+.container1.select2 {
+    border: 1px solid black;
+    max-width: 100px;
+    text-align: center;
+    background-color: royalblue;
+}
+```
