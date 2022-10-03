@@ -367,3 +367,46 @@ div > p {
     background-color: powderblue;
 }
 ```
+
+> ### 4. General Sibling Selector
+
+![genereal-sibling-selector](images/genereal-sibling-selector.png)
+
+```html
+#index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Genereal Sibling Selector</title>
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+   <div>
+        <p>Lorem</p>
+        <p>Ipsum</p>
+    </div>
+    <p>Dolor</p>
+    <p>Sit</p>
+    <p>Amet</p>
+    <p>Consectetur</p>
+</body>
+</html>
+```
+
+```css
+#styles.css
+
+/*General Sibling Selector*/
+
+div ~ p {
+    border: 1px solid black;
+    max-width: 100px;
+    text-align: center;
+    background-color: lightgreen;
+}
+```

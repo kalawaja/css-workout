@@ -1,0 +1,9 @@
+
+/*General Sibling Selector*/
+
+div ~ p {
+    border: 1px solid black;
+    max-width: 100px;
+    text-align: center;
+    background-color: lightgreen;
+}
