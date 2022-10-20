@@ -459,3 +459,54 @@ div ~ p {
     background-color: royalblue;
 }
 ```
+
+> ## CSS :nth-child Selectors  
+
+> ### 1. :last-child
+
+![last-child](images/last-child.png)
+
+```html
+#index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS :last-child Selector</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css-workout/normalize.css">
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</body>
+</html>
+```
+
+```css
+#styles.css
+
+/*CSS:last-child Selector*/
+
+.parent {
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+```
+
+> ### 2. :nth-child(2)
+
+![nth-child(2)](images/nth-child(2).png)
