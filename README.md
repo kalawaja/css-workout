@@ -578,7 +578,7 @@ div ~ p {
 }
 ```
 
-> ### 2. :nth-child(even)
+> ### 3. :nth-child(even)
 
 ![nth-child(even)](images/nth-child(even).png)
 
@@ -636,3 +636,62 @@ div ~ p {
 }
 ```
 
+> ### 4. :nth-child(n+3)
+
+![nth-child(n+3)](images/nth-child(n+3).png)
+
+```html
+#index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS :nth-child(n+3) Selectors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css-workout/normalize.css">
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</body>
+</html>
+```
+
+```css
+#styles.css
+
+/*CSS:nth-child(n+3) Selector*/
+
+/* for (n=0, n++) */
+
+.parent {
+    background: #f1f1f1;
+    border: 1px solid black;
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.child {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.child:nth-child(n+3) {
+    background: red;
+}
+```
